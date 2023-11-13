@@ -1,0 +1,46 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: yellow;
+    padding: 0;
+}
+
+.hover {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    font-size: 100%;
+    text-align: center;
+    float: none;
+}
+
+.footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 120%;
+    clear: both;
+}
+
+.left {
+    color: black;
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+
+.right {
+    color: yellow;
+    width: 60%;
+    height: 500px;
+    float: right;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    
+
+}
+

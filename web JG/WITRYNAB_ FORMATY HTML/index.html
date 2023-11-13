@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formatowania dokumentów HTML</h1>
+    </header>
+    <section>
+        <nav class="one">
+            <h2>Przykład listy - hobby</h2><br>
+            <ul>
+                <li>muzyka</li>
+                <li>turystyka</li>
+                    <ol type="1">
+                        <li>góry</li>
+                        <li>jeziora</li>
+                        <li>na rowerze</li>
+                    </ol>
+                <li>książki</li>
+            </ul>
+        </nav>
+        <nav class="two">
+            <h2>Przykład tabeli - rozkład</h2><br>
+
+            <table>
+                <tr>
+                    <th>Pora dnia</th>
+                    <th>obowiązki</th>
+                </tr>
+                <tr>
+                    <td>rano</td>
+                    <td>nauka</td>
+                </tr>
+                <tr>
+                    <td>południe</td>
+                    <td>zajecia dodatkowe</td>
+                </tr>
+                <tr>
+                    <td>popołudnie</td>
+                    <td rowspan="2">moje hobby</td>
+                </tr>
+                <tr>
+                    <td>wieczór</td>
+                </tr>
+            </table>
+
+        </nav>
+        <nav class="three">
+            <img src="napisy.png" alt="technologia web">
+        </nav>
+    </section>
+    <main>
+        <p>Podaj rozmiar tekstu w procentach </p><br>
+        <form>
+            <input type="number">% <br> <br>
+            <select name="" id="">
+                <option value="">kursywa</option>
+                <option value="">prosty</option>
+            </select>
+            <br> <br>
+        </form>
+        <p>Jakim kolorem sformoatować tekst?&nbsp;Wybierz przycisk</p><br>
+        <form>
+            <input type="submit" style="background-color: blue; border: none" value="" size="2">
+            <input type="submit" style="background-color: red; border: none;" value="" size="1">
+            <input type="submit" style="background-color: green; border: none;" value="" size="1">
+        </form>
+    </main>
+    <footer>
+        <p>Formatowaniem tekstu zajmowł się Wojciech Sołdekci</p>
+    </footer>
+</body>
+</html>

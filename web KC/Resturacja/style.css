@@ -1,0 +1,45 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-color: #2F180C;
+    text-align: center;
+    color: white;
+    height: 60px;
+}
+
+main {
+    background-color: #F6E5DC;
+}
+
+.left {
+    width: 60%;
+    float: left;
+}
+
+.right {
+    font-size: 200%;
+    padding: 50px;
+    float: right;
+}
+
+.down {
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+    clear: both;
+}
+
+footer {
+    background-color: #2F180C;
+    text-align: center;
+    color: white;
+    height: 60px;
+}
+
+#img {
+    height: 400px;
+}
+

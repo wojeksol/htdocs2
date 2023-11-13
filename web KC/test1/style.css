@@ -1,0 +1,57 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.logo {
+    height: 150px;
+    width: 40%;
+    background-color: blue;
+    float: left;
+}
+
+.name {
+    width: 60%;
+    height: 150px;
+    background-color: red;
+    float: right;
+}
+
+
+.left {
+    height: 600px;
+    width: 50%;
+    background-color: orange;
+    float: left;
+}
+
+.right {
+    height: 600px;
+    width: 50%;
+    background-color: greenyellow;
+    float: right;
+}
+
+.footer1 {
+    width: 30%;
+    height: 150px;
+    background-color: aqua;
+    float: left;
+}
+
+.footer2 {
+    width: 30%;
+    height: 150px;
+    background-color: hsl(197, 100%, 50%);
+    float: right;
+}
+
+.footer3 {
+    width: 40%;
+    height: 150px;
+    background-color: brown;
+    float: right;
+}
+

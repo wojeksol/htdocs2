@@ -1,0 +1,58 @@
+ul {
+    list-style-type: square;
+}
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+header {
+    background-color: #824555;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.one, .two {
+    background-color: #A26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+}
+
+.three {
+    background-color: #A26475;
+    color: white;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+}
+
+main {
+    background-color: #F0EAE2;
+    padding: 50px;
+}
+
+footer {
+    background-color: #824555;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+table, td, th {
+    border: 2px solid #69293A;
+    padding: 7px;
+    border-collapse: collapse;
+}
+.one {
+    float: left;
+}
+
+.two {
+    float: left;
+}
+
+.three {
+    float: right;
+}

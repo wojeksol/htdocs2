@@ -1,0 +1,41 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+header, footer {
+    background-color: sienna;
+    color: white;
+    height: 150px;
+}
+
+.hover1, .footer1 {
+    width: 40%;
+    float: left;
+}
+
+.hover2, .footer2 {
+    width: 50%;
+    font-size: 150%;
+    float: left;
+}
+
+.hover3, .footer3 {
+    width: 10%;
+    text-align: center;
+    float: right;
+}
+
+main {
+    background-color: tan;
+    padding: 100px;
+}
+
+#ramka {
+    border: 3px dotted sienna;
+    background-color: tan;
+    color: sienna;
+    padding: 40px;
+    height: 150px;
+}
+

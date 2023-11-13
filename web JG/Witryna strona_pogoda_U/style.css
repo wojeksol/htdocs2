@@ -1,0 +1,74 @@
+* {
+    font-family: garamond;
+    margin: 0;
+}
+
+.baner-left, .baner-right {
+    background-color: rgb(95, 158, 160);
+    color: yellow;
+    width: 20%;
+    height: 90px;
+    text-align: right;
+}
+
+.baner-center {
+    background-color: rgb(95, 158, 160);
+    color: yellow;
+    width: 60%;
+    height: 90px;
+    text-align: center;
+}
+
+.main-left, .main-right {
+    background-color: rgb(175, 238, 238);
+    width: 50%;
+    height: 250px;
+}
+
+.main-botton {
+    background-color: rgb(95, 158, 160);
+    padding: 30px;
+    
+}
+
+.footer {
+    background-color: rgb(175, 238, 238);
+    padding: 10px;
+}
+
+table {
+    border: 2px dotted green;
+    width: 100%;   
+    border-spacing: 0px;
+}
+
+th {
+    border: 2px dotted green;
+    background-color: green;
+    color: yellow;
+}
+
+td {
+    border: 2px dotted green;
+
+}
+
+.baner-left {
+    float: left;
+}
+
+.baner-center {
+    float: left;
+}
+
+.baner-right {
+    float: right;
+}
+
+.main-left {
+    float: left;
+}
+
+.main-right {
+    float: right;
+}

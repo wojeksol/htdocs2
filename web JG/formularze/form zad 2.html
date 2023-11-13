@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        <h4>Dane osobowe:</h4>
+        Pierwsze imię: <input type="text" name="imie1"><br>
+        Drugie imię: <input type="text" name="imie2"><br>
+        Nazwisko: <input type="text" name="nazwisko"><br><br>
+
+        Płeć:<br>
+        <input type="radio" name="plec" value="kobieta">kobieta<br>
+        <input type="radio" name="plec" value="mężczyzna">mężczyzna<br><br>
+
+        Wiek: 
+        <select name="wiek">
+            <option>&lt;17</option>
+            <option>18-30</option>
+            <option>31-50</option>
+            <option>&gt;50</option>
+        </select><br>
+
+        PESEL: <input type="text" name="pesel" size="11" maxlength="11"><br><br>
+
+        zainteresowania: <br>
+        <input type="checkbox" name="hobby" value="muzyka">muzyka<br>
+        <input type="checkbox" name="hobby" value="sport">sport<br>
+        <input type="checkbox" name="hobby" value="taniec">taniec<br>
+        <input type="checkbox" name="hobby" value="film">film<br>
+        <input type="checkbox" name="hobby" value="teatr">teatr<br>
+        <input type="checkbox" name="hobby" value="opera">opera<br>
+        <input type="checkbox" name="hobby" value="komputery">komputery<br>
+        <input type="checkbox" name="hobby" value="nauka">nauka<br><br>
+
+        Przeslij plik: <input type="file" name="plik"><br>
+        
+    
+
+    
+        <h4>Adres zamieszkania:</h4>
+
+        Ulica: <input type="text" name="ulica"><br>
+
+        Numer domu/bloku: <input type="text" name="nr_domu"><br>
+
+        Numer mieszkania: <input type="text" name="nr_mieszkania"><br>
+
+        Miasto: <input type="text" name="miasto"><br>
+
+        Dzielnica: <input type="text" name="dzielnica"><br>
+
+        Kod pocztowy: <input type="text" name="kod_pocztowy" size="2" maxlength="2">-<input type="text" name="kod_pocztowy1" size="4" maxlength="3"><br>
+        Wybierz Województwo:
+
+        <select name="wojewodztwo">
+            
+            <option>Małopolskie</option>
+            <option>Śląskie</option>
+            <option>Podkarpackie</option>
+            <option>Świętokrzyskie</option>
+            <option>Podlaskie</option>
+            <option>Warmińsko-Mazurskie</option>
+            <option selected>Mazowieckie</option>
+            <option>Wielkopolskie</option>
+            <option>Lubelskie</option>
+            <option>Lubuskie</option>
+            <option>Dolnośląskie</option>
+            <option>Kujawsko-Pomorskie</option>
+            <option>Opolskie</option>
+            <option>Pomorskie</option>
+            <option>Zachodniopomorskie</option>
+
+        </select>
+        <br><br>
+
+        <input type="submit" value="Zpisz i Wyślij">
+        <input type="reset" value="Reset">
+        
+            
+    </form>
+
+    
+
+</body>
+</html>

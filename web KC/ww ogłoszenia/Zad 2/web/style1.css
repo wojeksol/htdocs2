@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+}
+
+table, td {
+    border: 3px rgb(0, 255, 64); 
+    border-style: dotted;
+    text-align: center;
+    margin: auto;
+    font-size: 130%;
+}
+
+header {
+    background-color: #49adff;
+    height: 50px;
+    font-size: 160%;
+    text-align: center;
+    padding-top: 10px;
+    color: #001122;
+}
+
+main {
+    background-image: url("img/main3.svg");
+    height: 280px;
+    padding-top: 300px;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-image: url("img/footer6.svg");
+    height: 150px;
+    text-transform: uppercase;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+table {
+    margin: auto;
+}

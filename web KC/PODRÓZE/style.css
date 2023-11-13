@@ -1,0 +1,44 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.baner, .footer {
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+.cookies {
+    background-color: #A1887F;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.left {
+    background-color: #D7CCC8;
+    width: 35%;
+    height: 550px;
+}
+
+.right {
+    background-color: #D7CCC8;
+    width: 65%;
+    height: 550px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+img {
+    height: 240px;
+    margin: 6px;
+    border-radius: 20px;
+}
