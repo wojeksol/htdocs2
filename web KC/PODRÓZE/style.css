@@ -42,3 +42,27 @@ img {
     margin: 6px;
     border-radius: 20px;
 }
+
+#pl:hover {
+    scale:(1.1);
+    border: 20px solid purple;
+    transition: all 0.5s ease;
+}
+
+#gre:hover {
+    scale:(1.1);
+    border: 20px solid green;
+    transition: all 0.5s ease;
+}
+
+#wl:hover {
+    scale:(1.1);
+    border: 20px solid red;
+    transition: all 0.5s ease;
+}
+
+#hiszp:hover {
+    scale:(1.1);
+    border: 20px solid yellow;
+    transition: all 0.5s ease;
+}
