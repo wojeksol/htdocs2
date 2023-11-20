@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    font-family: Garamond;
+}
+
+.logo {
+    background-color: olive;
+    width: 25%;
+    height: 110px;
+    float: right;
+}
+
+.menu {
+    background-color: olive;
+    width:75%;
+    height: 110px;
+    float: left;
+}
+
+.baner, footer {
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.right, .left {
+    background-color: wheat;
+    width: 50%;
+    height: 450px;
+    font-size: 150%;
+}
+
+.left {
+    text-align: center;
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+h1 {
+    letter-spacing: 12px;
+}
+
+#a {
+    color: lightgrey;
+    margin: 30px;
+    font-size: 150%;
+    line-height: 110px;
+    border: none;
+    text-decoration: none;
+    transition: all 0,3s;
+}
+
+#a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
