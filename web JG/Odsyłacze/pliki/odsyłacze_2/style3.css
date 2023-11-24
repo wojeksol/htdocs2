@@ -1,0 +1,27 @@
+.img img {
+    height: 100px;
+    width: 100px;
+}
+
+.img2 img {
+    height: 150px;
+    width: 150px;
+    
+}
+
+.img2 {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(223, 175, 240);
+    text-align: center;
+}
