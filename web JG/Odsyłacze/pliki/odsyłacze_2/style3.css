@@ -1,12 +1,14 @@
 .img img {
     height: 100px;
     width: 100px;
+    border: 2px solid darkblue;
+    
 }
 
 .img2 img {
     height: 150px;
     width: 150px;
-    
+    border: 2px solid darkblue;
 }
 
 .img2 {
@@ -24,4 +26,8 @@
 header {
     background-color: rgb(223, 175, 240);
     text-align: center;
+}
+
+.img{
+    margin-left: 10px;
 }
