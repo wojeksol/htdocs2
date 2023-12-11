@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    font-family: helvetica;
+}
+
+.baner, .footer {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+.main {
+    background-color: rgb(176, 196, 222);
+    padding: 50px;
+    text-align: center;
+}
+
+.left {
+    background-color: rgb(70, 130, 180);
+    float: left;
+    width: 80%;
+    height: 300px;
+    color: white;
+}
+
+.right {
+    background-color: rgb(70, 130, 180);
+    float: right;
+    width: 20%;
+    height: 300px;
+    color: white;
+}
+
+#img {
+    padding: 3px;
+    border: dotted 1px blue;
+    border-radius: 10px;
+}
+
+.left img {
+    height: 40%;
+
+}
+
+.left img:hover {
+    border: solid 1px white;
+}
+
+.footer {
+    clear: both;
+}
