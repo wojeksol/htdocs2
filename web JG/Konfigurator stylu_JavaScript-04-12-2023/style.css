@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.left {
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+    float: left;
+}
+
+.right {
+    background-color: maroon;
+    color: white;
+    height: 600px; 
+    width: 70%;
+    float: right;
+}
+
+.footer {
+    background-color: dimgray;
+    color: white;
+}
