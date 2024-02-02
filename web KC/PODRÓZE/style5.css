@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(blurry-gradient-haikei.svg);
+}
+
+.blok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.t1 {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.blok > .img, .t1 {
+    margin: 50px;
+}

@@ -17,7 +17,7 @@
         if ($liczba < 0) {
             echo "Wartość zmienej \$liczba jest mniejsza od zera.";
         }
-        if ($liczba > 0) {
+        else if ($liczba > 0) {
             echo "Wartość zmienej \$liczba jest większa od zera.";
         }
         else {
