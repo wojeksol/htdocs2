@@ -1,0 +1,6 @@
+body {
+    margin: 0;
+    background-image: linear-gradient( to right, red , blue, yellow, silver, green);
+    background-repeat: repeat;
+    background-size: cover;
+}

@@ -1,0 +1,9 @@
+Insert into filmy (tytul,rok,gatunki_id,ocena) values ('Suburbicon',2017,5,5);
+select filmy.tytul, gatunki.nazwa from filmy inner join gatunki on filmy.gatunki_id=gatunki.id;
+select tytul, rok from filmy where gatunki_id=3 and ocena=5;
+create table aktorzy
+(
+id int(5) not null,
+imie text(50),
+nazwisko text(50)
+);
