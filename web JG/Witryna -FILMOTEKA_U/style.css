@@ -24,6 +24,7 @@ header {
     height: 300px;
     width: 75%;
     float: right;
+    
 }
 
 .down {
@@ -46,7 +47,7 @@ h1 {
 
 form {
     margin: 30px;
-    line-height: 3px;
+    line-height: 3;
 }
 
 form:hover {
