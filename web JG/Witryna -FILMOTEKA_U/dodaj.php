@@ -9,7 +9,7 @@
         $rok = $_POST["rok"];
         $rank = $_POST["rank"];
 
-        $sql -> query("INSERT INTO filmy (gatunki_id, tytul, rok, ocena) VALUES ('$gat','$title','$rok','$rank');");
+        $sql -> query("INSERT INTO filmy (tytul, rok, gatunki_id, ocena) VALUES ('$title', $rok, $gat, $rank);");
 
         echo"Skrypt działa!";
         
