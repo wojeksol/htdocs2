@@ -1,0 +1,16 @@
+CREATE TABLE Konta (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  login TEXT NULL,
+  haslo TEXT NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE Uzytkownicy (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  imie TEXT NULL,
+  nazwisko TEXT NULL,
+  adres TEXT NULL,
+  telefon TEXT NULL,
+  PRIMARY KEY(id)
+);
+

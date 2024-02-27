@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Muzyczny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <h1>SKLEP MUZYCZNY</h1>
+        </header>
+
+        <main>
+            <nav class="left">
+                <h2>NASZA OFERTA</h2><br>
+                <ol>
+                    <li>Instrumenty muzyczne</li>
+                    <li>Sprzęt audio</li>
+                    <li>Płyty CD</li>
+                </ol>
+            </nav>
+
+
+            <nav class="right">
+                <h2>FORMULARZ REJESTRACYJNY</h2>
+                <form method="post" action="formularz.php">
+
+                    <b><p>Dane osobowe</p></b><br>
+
+                    Imię: <br><input type="text" name="imie" required><br>
+
+                    Nazwisko: <br><input type="text" name="nazwisko" required><br>
+
+                    Adres: <br><input type="text" name="adres" required><br>
+
+                    Telefon: <br><input type="text" name="telefon" required><br><br>
+
+                    <hr><br>
+
+                    <b><p>Dane logowania</p></b><br>
+
+                    Login: <br><input type="text" name="login" required><br>
+
+                    Hasło: <br><input type="password" name="haslo" required><br><br>
+
+                    <input type="checkbox" name="reg" id="">Akceptuję <a href="regulaim.txt" target="_blank">regulamin</a> sklepu<br><br>
+
+                    <input type="submit" value="Zarejestruj się">
+
+                    <input type="reset" value="WYCZYŚĆ">
+
+                </form>
+            </nav>
+        </main>
+
+
+</body>
+</html>

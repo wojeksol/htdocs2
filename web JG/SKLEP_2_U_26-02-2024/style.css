@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #812F8D;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    padding: 10px;
+}
+
+.left {
+    background-color: #BB74C4;
+    float: left;
+    width: 25%;
+    height: 100vh;
+    color: white;
+}
+
+.right {
+    width: 75%;
+    float: right;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin: 20px;
+}
