@@ -1,0 +1,19 @@
+SELECT klienci.nazwa_konta, zamowienia.id_zamowienia
+FROM zamowienia
+INNER JOIN klienci ON zamowienia.id_klienta = klienci.id_klienta
+ORDER BY klienci.nazwa_konta;
+
+
+SELECT zamowienia.id_zamowienia, klienci.nazwa_konta
+FROM zamowienia
+INNER JOIN klienci ON zamowienia.id_klienta = klienci.id_klienta;
+
+
+SELECT zamowienia.id_zamowienia, klienci.nazwa_konta
+FROM zamowienia
+RIGHT JOIN klienci ON zamowienia.id_klienta = klienci.id_klienta
+ORDER BY zamowienia.id_zamowienia;
+
+SELECT * FROM klienci
+JOIN zamowienia ON klienci.id_klienta=zamowienia.id_klienta 
+ORDER BY klienci.nazwa_konta;

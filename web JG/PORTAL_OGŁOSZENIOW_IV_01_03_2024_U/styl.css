@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #00839C;
+    color: white;
+    font-family: Tahoma;
+    text-align: center;
+    height: 80px;
+}
+
+.left {
+    float: left;
+    width: 30%;
+    height: 750px;
+    background-color: #20D9FB;
+}
+
+.right {
+    background-color: #00BDE2;
+    float: right;
+    width: 70%;
+    height: 750px;
+}
+
+footer {
+    background-color: #00839C;
+    color: white;
+    text-align: center;
+}
+
+img {
+    padding: 30px;
+    border: solid 2px blue;
+}
+
+a {
+    color: black;
+}
+
+:checked + a {
+    color: white ;
+}
+
+#reset, #sub {
+    background-color: blue;
+    color: white;
+    border: none;
+    margin: 20px;
+}
