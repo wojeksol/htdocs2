@@ -127,7 +127,7 @@ if ($sql->connect_error) {
     }
 
     $questionAnswer = $_POST['rodz'];
-    $query = "SELECT COUNT(*) AS count FROM pytania WHERE `Pytanie 9` = '$questionAnswer'";
+    $query = "SELECT COUNT(*) AS count FROM pytania WHERE `Pytanie 10` = '$questionAnswer'";
     $result = $sql->query($query);
     if ($result) {
         $row = $result->fetch_assoc();
@@ -136,7 +136,8 @@ if ($sql->connect_error) {
     } else {
         echo "Błąd w zapytaniu: " . $sql->error;
     }
- 
+    
+    // ($sql->query("SELECT COUNT(*) AS count FROM pytania WHERE `Pytanie 10` = '$questionAnswer';")->fetch_assoc();)['count'];
  }
 $sql->close();
 
