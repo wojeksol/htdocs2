@@ -24,7 +24,6 @@ if ($sql->connect_error) {
 
     echo "Dziękujemy za wypełnienie ankiety!<br>Twoje odpowiedzi zostały zapisane w bazie danych.<br><br>Wyniki ankiety:<br>";
 
-    // Count participants with specific answer
 
     $questionAnswer = $_POST['18'];
     $query = "SELECT COUNT(*) AS count FROM pytania WHERE `Pytanie 1` = '$questionAnswer'";

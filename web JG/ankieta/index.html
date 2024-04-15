@@ -10,66 +10,90 @@
 
         <header><h1>Ankieta</h1></header><br><br>
     
-    <form action="dodaj.php" method="post">
+    <form action="wynik.php" method="post">
 
 
-        <b>Czy jeteś pełnoletni/a?</b><br>
 
-        <input type="radio" name="18" value="Tak" checked>Tak
-        <input type="radio" name="18" value="Nie">Nie <br><br>
+        <label for="18">
+                <p><b>Czy jeteś pełnoletni/a?</b><br></p>
+
+                <input type="radio" name="18" value="Tak" checked>Tak
+                <input type="radio" name="18" value="Nie">Nie <br><br>
+        </label>
+<hr><br>
+        <label for="plec">
+                <b>Czy regularnie się uczysz?</b><br>
+                <input type="radio" name="plec" value="Tak" checked>Tak
+                <input type="radio" name="plec" value="Nie">Nie <br><br>
+        </label>
+
 <hr><br>
 
-        <b>Czy regularnie się uczysz?</b><br>
-        <input type="radio" name="plec" value="Tak" checked>Tak
-        <input type="radio" name="plec" value="Nie">Nie <br><br>
+        <label for="fiz">
+                <b>Czy jesteś osobą aktywną fizycznie?</b><br>
+                <input type="radio" name="fiz" value="Tak" checked>Tak
+                <input type="radio" name="fiz" value="Nie">Nie <br><br>
+        </label>
 
 <hr><br>
 
-        <b>Czy jesteś osobą aktywną fizycznie?</b><br>
-        <input type="radio" name="fiz" value="Tak" checked>Tak
-        <input type="radio" name="fiz" value="Nie">Nie <br><br>
+        <label for="zaw">
+                <b>Czy jesteś osobą aktywną zawodowo?</b><br>
+                <input type="radio" name="zaw" value="Tak" checked>Tak
+                <input type="radio" name="zaw" value="Nie">Nie <br><br>
 
-<hr><br>
-
-        <b>Czy jesteś osobą aktywną zawodowo?</b><br>
-        <input type="radio" name="zaw" value="Tak" checked>Tak
-        <input type="radio" name="zaw" value="Nie">Nie <br><br>
+        </label>        
 
 <hr><br>
     
-            <b>Czy jesteś osobą aktywną społecznie?</b><br>
-            <input type="radio" name="spo" value="Tak" checked>Tak
-            <input type="radio" name="spo" value="Nie">Nie <br><br>
+        <label for="spo">
+                <b>Czy jesteś osobą aktywną społecznie?</b><br>
+                <input type="radio" name="spo" value="Tak" checked>Tak
+                <input type="radio" name="spo" value="Nie">Nie <br><br>
+
+        </label>
+
 
 <hr><br>
 
-            <b>Czy masz hobby?</b><br>
-            <input type="radio" name="hobby" value="Tak" checked>Tak
-            <input type="radio" name="hobby" value="Nie">Nie <br><br>
+            <label for="hobby">
+                <b>Czy masz hobby?</b><br>
+                <input type="radio" name="hobby" value="Tak" checked>Tak
+                <input type="radio" name="hobby" value="Nie">Nie <br><br>
+            </label>
 
 <hr><br>
 
-            <b>Czy umiesz gotować?</b><br>
-            <input type="radio" name="got" value="Tak" checked>Tak
-            <input type="radio" name="got" value="Nie">Nie <br><br>
+            <label for="got">
+                <b>Czy umiesz gotować?</b><br>
+                <input type="radio" name="got" value="Tak" checked>Tak
+                <input type="radio" name="got" value="Nie">Nie <br><br>
+            </label>
+            
 
 <hr><br>
-
-            <b>Czy grasz na komputerze?</b><br>
-            <input type="radio" name="komp" value="Tak" checked>Tak
-            <input type="radio" name="komp" value="Nie">Nie <br><br>
-
-<hr><br>
-
-            <b>Czy masz zwierzęta?</b><br>
-            <input type="radio" name="zwierz" value="Tak" checked>Tak
-            <input type="radio" name="zwierz" value="Nie">Nie <br><br>
+            <label for="komp">
+                <b>Czy grasz na komputerze?</b><br>
+                <input type="radio" name="komp" value="Tak" checked>Tak
+                <input type="radio" name="komp" value="Nie">Nie <br><br>
+            </label>
+            
 
 <hr><br>
+            <label for="zwierz">
+                <b>Czy masz zwierzęta?</b><br>
+                <input type="radio" name="zwierz" value="Tak" checked>Tak
+                <input type="radio" name="zwierz" value="Nie">Nie <br><br>
+        </label>
+            
 
-            <b>Czy masz rodzeństwo?</b><br>
-            <input type="radio" name="rodz" value="Tak" checked>Tak
-            <input type="radio" name="rodz" value="Nie">Nie <br><br>
+<hr><br>
+        <label for="rodz">
+                <b>Czy masz rodzeństwo?</b><br>
+                <input type="radio" name="rodz" value="Tak" checked>Tak
+                <input type="radio" name="rodz" value="Nie">Nie <br><br>
+        </label>
+            
 
             <input type="submit" value="ZATWIERDŹ">
             <input type="reset" value="ZRESETUJ">

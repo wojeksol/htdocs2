@@ -1,0 +1,71 @@
+input::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+footer p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+h1 {
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.left {
+    float: left;
+    text-align: center;
+    
+    
+}
+
+.right {
+    float: right;
+    text-align: center;
+    
+    
+}
+
+.button {
+    clear: both;
+    text-align: center;
+    
+}
+
+input {
+    border-radius: 10px;
+}
+
+hr {
+    width: 0px;
+    height: 300px;    
+}
+
+table {
+    box-shadow: 0px 0px 15px black;
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 90%;
+    margin: 75px;
+    
+}
+
+th, td {
+    padding: 8px;
+    
+    width: 33%;
+}

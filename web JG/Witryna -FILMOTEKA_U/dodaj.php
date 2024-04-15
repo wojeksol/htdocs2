@@ -2,7 +2,7 @@
 
     $sql = new mysqli('127.0.0.1','root','','filmoteka');
     
-    if(isset($_POST["title"]))
+    if(isset($_POST["sub"]))
     {
         $title = $_POST["title"];
         $gat = $_POST["gat"];
