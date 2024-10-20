@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    font-family: Garamond;
+}
+
+header {
+    background-color: Tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 90px;
+    float: left;
+}
+
+h2 {
+    padding-top: 2%;
+}
+
+main {
+    width: 80%;
+    height: 600px;
+    float: left;
+    background-color: white;
+}
+
+.right {
+    background-color: Coral;
+    width: 20%;
+    height: 690px;
+    float: right;
+}
+
+footer {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+img {
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.chat {
+    border: 1px solid Tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+
+.j1, .k1 {
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+
+.j1 {
+    background-color: #EEE;
+    float: left;
+}
+
+.k1 {
+    background-color: #CCC;
+    float: right;
+    text-align: right;
+}
+
+button {
+    background-color: tomato;
+    border: 1px solid darkred;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 500px;
+}
+
+.j1img {
+    float: left;
+}
+
+.k1img {
+    float: right;
+}

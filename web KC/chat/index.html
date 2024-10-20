@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header><h2>Chat</h2></header>
+
+    <section class="right">
+        <h3>Chaty</h3>
+        <ul>
+            <li>Ogólny</li>
+            <li>Tematyczne</li>
+            <ol>
+                <li>Turystyczny</li>
+                <li>Żeglarski</li>
+                <li>Filatelistyczny</li>
+                <li>Hodowla zwierzątek domowych</li>
+            </ol>
+        </ul>
+        <h3>Uczestnicy</h3>
+        <p>Jolanta Nowak</p>
+        <img src="Jolka.jpg" alt="Jolanta Nowak">
+        <p>Krzysztof Łukasiński</p>
+        <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+    </section>
+
+    <main>
+        <div class="chat">
+            <div class="j1">
+                <img src="Jolka.jpg" class="j1img">
+                <p>Cześć idziesz jutro do kina?</p>
+            </div>
+            <div class="k1">
+                <img src="Krzysiek.jpg" class="k1img">
+                <p>Tak! A ty?</p>
+            </div>
+            <div id="j">
+
+            </div>
+            <div id="k"></div>
+        </div>
+        Wypisz wiadomość: <input type="text" name="text" id="text"><button onclick="send()">Wyślij</button><br>
+        <button onclick="los()">Generuj  losową  odpowiedź</button>
+    </main>
+
+    <script>
+
+        function send() {
+            var text = document.getElementById('text').value;
+
+            document.getElementById('j').innerHTML = "<div class='j1'><img src='Jolka.jpg' class='j1img'><p>" +  text  + "<p></div>";
+        }
+
+        function los() {
+            var text = ["Świetnie!", "Kto gra główną rolę?", "Lubisz filmy Tego reżysera?","Będę 10 minut wcześniej","Może kupimy sobie popcorn?","Ja wolę Colę","Zaproszę jeszcze Grześka","Tydzień temu też byłem w kinie na Diunie","Ja funduję bilety"];
+            
+            document.getElementById('k').innerHTML = "<div class='k1'><img src='Krzysiek.jpg' class='k1img'><p>"+ text[Math.floor(Math.random()*9)] +" </p></div>";
+        }
+
+    </script>
+    
+
+    <footer><h5>Chat wykonał: Wojciech Sołdecki</h5></footer>
+    
+</body>
+</html>

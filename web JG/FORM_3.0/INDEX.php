@@ -50,7 +50,7 @@
             </nav></td>
             <td><nav class="right">
                 <div style="wight:100%">
-                <input type="text" size="5" value="+48" id="nr" size="5" style="float: left;">
+                <input type="text" value="+48" id="nr" size="5" style="float: left;">
                 <input type="text" placeholder="Phone number" size="65" name="tele" style="margin-right: 25px; float:left;"></b><br><br></div>
                 <b>Adres zamieszkania:<br><br></b>
                 <textarea name="adres" id="" cols="30" rows="10"></textarea><br><br>

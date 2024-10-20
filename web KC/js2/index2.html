@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="one">
+            <img src="logo.jpg" alt="matematyka">
+        </div>
+        <div class="two">
+            <h1>Pomocnik matematyczne</h1>
+        </div>
+        <div class="three">
+            <a href="index2.html">Działania</a>
+        </div>
+        <div class="four">
+            <a href="index.html">Mnożenie</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="left">
+            <h3>Proste działania</h3>
+            Liczba A: <input type="text" id="a"><br>
+            Liczba B: <input type="text" id="b"><br><br>
+            <button onclick="Dod()">+</button>
+            <button onclick="Odj()">-</button>
+            <button onclick="Mno()">*</button>
+            <button onclick="Dzi()">/</button>
+            <button onclick="pot()">A^B</button>
+            <br><br>
+
+            <h3> Pola figur</h3>
+            
+
+            <button onclick="kwa()">Kwadrat</button>
+            <button onclick="trój()">Trójkąt</button>
+            <button onclick="pro()">Prostokąt</button>
+            <button onclick="rom()">Romb</button>
+            <button onclick="reset2()">Reset</button>
+
+            <p id="p"></p>
+
+
+
+            <a id="score"></a>
+
+        </div>
+        <div class="right">
+            <ul>
+                <li>dodawanie</li>
+                <li>odejmowanie</li>
+                <li>mnożenie</li>
+                <li>dzielenie</li>
+                <li>potęgowanie</li>
+            </ul>
+        </div>
+
+        <script>
+
+            function reset2() {
+                document.getElementById("p").innerHTML = "";
+                document.getElementById("score").innerHTML = "";
+                document.getElementById("a").value = "";
+                document.getElementById("b").value = "";
+            }
+
+            function Dod() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var wynik = parseFloat(a) + parseFloat(b);
+
+                document.getElementById("score").innerHTML = "Wynik dodawania: " + wynik; 
+            }
+            
+            function Odj() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var wynik = parseFloat(a) - parseFloat(b);
+
+                document.getElementById("score").innerHTML = "Wynik odejmowania: " + wynik; 
+            }
+
+            function Mno() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var wynik = parseFloat(a) * parseFloat(b);
+
+                document.getElementById("score").innerHTML = "Wynik mnożenia: " + wynik; 
+            }
+
+            function Dzi() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var wynik = parseFloat(a) / parseFloat(b);
+
+                document.getElementById("score").innerHTML = "Wynik dzielenia: " + wynik; 
+            }
+
+            function pot() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var wynik = Math.pow(parseFloat(a), parseFloat(b));
+
+                document.getElementById("score").innerHTML = "Wynik potęgowania: " + wynik; 
+
+            }
+
+
+            function kwa() {
+                document.getElementById("p").innerHTML = "Wzór: a ^2 <br><br>Podaj bok kwadratu: <input type='text' id='bok'><button onclick='kwad()'>Oblicz</button>";
+            }
+
+            function kwad() {
+                var bok = document.getElementById("bok").value;
+
+                var wynik = parseFloat(bok) * parseFloat(bok);
+
+                document.getElementById("score").innerHTML = "Pole kwadratu wynosi: " + wynik + "<button onclick='reset()'>Reset</button>";
+            }
+
+            function reset() {
+                document.getElementById("p").innerHTML = "";
+                document.getElementById("score").innerHTML = "";
+            }
+
+            function trój() {
+                document.getElementById("p").innerHTML = "Wzór: (a * h) / 2 <br><br>Podaj podstawę a trójkąta: <input type='text' id='podst'><br>Podaj wysokość h trójkąta: <input type='text' id='wys'><button onclick='troji()'>Oblicz</button>";
+            }
+
+            function troji() {
+                var podst = document.getElementById("podst").value;
+                var wys = document.getElementById("wys").value;
+
+                var wynik = (parseFloat(podst) * parseFloat(wys)) / 2;
+
+                document.getElementById("score").innerHTML = "Pole trójkąta wynosi: " + wynik + "<button onclick='reset()'>Reset</button>";
+            }
+
+            function pro() {
+                document.getElementById("p").innerHTML = "Wzór: a * b <br><br>Podaj bok a prostokąta: <input type='text' id='a'><br>Podaj bok b prostokąta: <input type='text' id='b'><button onclick='pros()'>Oblicz</button>";
+            }
+
+            function pros() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var wynik = parseFloat(a) * parseFloat(b);
+
+                document.getElementById("score").innerHTML = "Pole prostokąta wynosi: " + wynik + "<button onclick='reset()'>Reset</button>";
+            }
+
+            function rom() {
+                document.getElementById("p").innerHTML = "Wzór: a * b <br><br>Podaj boku a rombu: <input type='text' id='a'><br>Podaj wysokość h: <input type='text' id='b'><button onclick='romb()'>Oblicz</button>";
+            }
+
+            function romb() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var wynik = (parseFloat(a) * parseFloat(b)) ;
+
+                document.getElementById("score").innerHTML = "Pole rombu wynosi: " + wynik + "<button onclick='reset()'>Reset</button>";
+            }
+        </script>
+    </main>
+
+    <footer><p>Autor: Wojciech Sołdecki</p></footer>
+
+</body>
+</html>

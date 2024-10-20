@@ -1,0 +1,22 @@
+function DoStuff(doo)
+            {
+                let out = "";
+                let wyn = eval(String(document.getElementById("a").value) + String(doo) + String(document.getElementById("b").value));
+                
+                switch (doo) {
+                    case '+': 
+                        out = "Wynik dodawania to: "
+                        break;           
+                    case '-': 
+                        out = "Wynik odejmowania to: "
+                        break;
+                    case '*': 
+                        out = "Wynik mnożenia to: "
+                        break;
+                    case '/': 
+                        out = "Wynik dzielenia to: "
+                        break;    
+                }
+
+                document.getElementById("score").innerHTML = out + String(wyn);
+            }

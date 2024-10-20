@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Malowanie pokoi i biur</h1></header>
+
+    <main>
+        <div class="left">
+
+            <h2>Menu</h2>
+
+            <ul>
+                <li><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+
+        </div>
+        <div class="center">
+
+            <h2>Zapotrzebowanie na farbę</h2><br><br>
+
+            <h3>Malarz pomaluje 1 m2 za 30zł</h3>
+
+            Powierzchnia  malowania  (m2):<input type="number" id="num">
+            <button onclick="num()">Policz</button><br><br>
+            <p id="wynik"></p><br><br>
+            <p id="wynik2"></p>
+        </div>
+        <div class="right">
+
+            <img src="obraz.png" alt="Próbki farb">
+
+            
+
+        </div>
+
+        <script>
+
+            function num() {
+                var num = document.getElementById("num").value;
+
+                var wynik = num / 4;
+
+                document.getElementById("wynik").innerHTML = "Zapotrzebowanie na farbę wynosi: " + Math.ceil(wynik) + " Puszek";
+
+                document.getElementById("wynik2").innerHTML = "Płaca Malarza wynosi: " + num * 30 + " zł";
+            }
+
+        </script>
+
+    </main>
+
+    <footer>
+
+        <h3>MALARZ</h3>
+
+        <p>Stronę opracował: Wojciech Sołdekci</p>
+
+    </footer>
+</body>
+</html>

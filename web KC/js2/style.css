@@ -1,0 +1,63 @@
+* {
+    font-family: tahoma;
+    color: white;
+    margin: 0px;
+}
+
+.one, .two, .three, .four {
+    background-color: #983713;
+    width: 17%;
+    height: 100px;
+}
+
+.two {
+    background-color: #983713;
+    width: 49%;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+
+.one, .three {
+    float: left;
+}
+
+.four {
+    float: right;
+}
+
+.left {
+    background-color: #FF7F50;
+    width: 80%;
+    height: 500px;
+    float: left;
+}
+
+.right {
+    background-color: #FF7F50;
+    width: 20%;
+    height: 500px;
+    float: right;
+}
+
+footer {
+    background-color: #983713;
+    text-align: right;
+    clear: both;
+}
+
+button {
+    background-color: #D3D3D3;
+    border: solid 2px #2F2F2F;
+    color: #2F2F2F;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+input {
+    color: orange;
+}

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.h-left img {
+    height: 150px;
+}
+
+.login input{
+    border-radius: 10px;
+}
+
+
+main {
+    display: flex;
+    
+    justify-content: center;
+}
+.login {
+    margin: 100px;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    align-items: center;
+    display: flex;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login input[type="submit"] {
+    float: right;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+h3 {
+    text-align: center;
+    color: blueviolet;
+}
+
+

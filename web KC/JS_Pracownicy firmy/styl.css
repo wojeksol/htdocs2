@@ -1,0 +1,85 @@
+* {
+    font-family: bookman old style serif;
+    margin: 0px;
+}
+
+.left, .right {
+    background-color: darkcyan;
+    color: white;
+    width: 50%;
+    height: 100px;
+    letter-spacing: 15px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+footer {
+    background-color: darkcyan;
+    color: white;
+    clear: both;
+}
+
+.one, .two, .three {
+    background-color: azure;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 4px 4px 8px dimgray;
+
+}
+
+.one img, .two img, .three img {
+    width: 100%;
+}
+
+.one, .two, .three {
+    float: left;
+    
+}
+
+
+p, h2, h3 {
+    margin: 15px;
+}
+
+a {
+    color: white;
+    background-color: darkcyan;
+    ;
+}
+
+h5 {
+    background-color: teal;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h5:hover {
+    background-color: LightSeaGreen;
+}
+
+.cytat {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+    clear: both;
+}
+
+.d, .t {
+    visibility: hidden;
+    height: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
