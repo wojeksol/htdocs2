@@ -44,10 +44,14 @@
                 <input type="text" name="login" id="login" size="37"><br><br>
                 <h3>Hasło</h3>
                 <input type="password" name="pass" id="pass" size="37"><br><br>
-                <input type="submit" name="submit" value="Login" >
+                <input type="submit" name="submit" value="Login" ><br>
+                <p id="p"><?php echo $error; ?></p>
             </form>
         </div>
-      
+      <script>
+        document.getElementById('p').style.color = 'red';
+             
+      </script>
         
     </main>
 
@@ -55,7 +59,7 @@
 
 
     <footer>
-        <p>Wszelkie prawa zastrzeżone &copy; 2020</p>
+        <p>Wszelkie ludzkie prawa zastrzeżone oraz chęć do życia &copy; 2024</p>
     </footer>
 
 </body>

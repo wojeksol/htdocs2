@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header><h1>Formularz rejestracyjny konferencji <i>Nasze Kwiaty</i></h1></header>
+
+    <main>
+<br><br>
+
+      <form>  
+            <nav class="m-1" id="m-1">
+                
+                <h2>Dane osobowe</h2>
+                <input type="text" name="" id="name" placeholder="Wpisz imie..." required><br>
+                <input type="text" name="" id="sname" placeholder="Wpisz nazwisko..." required><br>
+                <button type="button" onclick="s1()">Następna karta</button>
+            </nav>
+            <nav class="m-2" id="m-2">
+                <h2>Dane kontaktowe</h2>
+                <input type="email" name="" id="email" placeholder="Wpisz email..." required><br>
+                <input type="tel" name="" id="tel" placeholder="Twój numer telefonu..."><br>
+                <button type="button" onclick="s2()">Następna karta</button>
+            </nav>
+            <nav class="m-3" id="m-3">
+                <h2>Hasło do logowania</h2>
+                <input type="password" name="" id="pass1" placeholder="Podaj hasło"><br>
+                <input type="password" name="" id="pass2" placeholder="Powtórz hasło"><br>
+                <button type="button" onclick="s3() ">Zatwierdź</button>
+            </nav>
+        </form> 
+
+    </main>
+
+    <footer>
+        <nav class="f-1" id="">
+            <video controls>
+                <source src="motyl.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje odtwarzacza video.
+            </video>
+        </nav>
+        <nav class="f-2" id="">
+            <h3>Plan Koferencji</h3>
+            <table>
+                <tr>
+                    <td>9:00 - 12:00</td>
+                    <td>Pielęgnacja roślin</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Targi kwiatowe</td>
+            </table>
+        </nav>
+        <nav class="f-3">
+            <p><a href="https://kwiaty.pl/">Internetowa kwiaciarnia</a></p>
+        </nav>
+        <nav class="f-4">
+            <p>Formularz wykonał Wojciech Sołdecki</p>
+        </nav>
+    </footer>
+
+
+</body>
+</html>
+
+<script>
+    function s1() {
+        document.getElementById('m-1').style.visibility = 'hidden';
+        document.getElementById('m-2').style.visibility = 'visible';
+    }
+
+    function s2() {
+        document.getElementById('m-2').style.visibility = 'hidden';
+        document.getElementById('m-3').style.visibility = 'visible';
+    }
+
+    function s3() {
+       var pass1 =  document.getElementById('pass1').value;
+       var pass2 = document.getElementById('pass2').value;
+        if (!(pass1 == pass2)) {
+            alert('Podane hasła różnią się');
+        }
+
+        var name = document.getElementById('name').value;
+        var sname = document.getElementById('sname').value;
+
+        console.log(name + ' ' + sname);
+
+
+    }
+</script>

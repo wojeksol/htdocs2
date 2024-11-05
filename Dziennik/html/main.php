@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300; url='../php/logout.php'">
     <title>Strona Główna</title>
     <link rel="stylesheet" href="../css/style1.css">
 </head>
@@ -29,9 +30,7 @@
             <a href="oceny.html"><img src="../img/oceny.jpg" alt=""></a>
             <a href="frekwencja.html"><img src="../img/frek.jpg" alt=""></a>
             <a href="uwagi.html"><img src="../img/uwagi.jpg" alt=""></a>
-            <a href="plan.html">Plan</a>
-            <a href="nauczyciele.html">Nauczyciele</a>
-            <a href="profile.html">Profil</a>
+            <a href="wiadomosci.html"><img src="../img/wiad.jpg" alt=""></a>
         </nav>
 
     </header>

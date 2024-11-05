@@ -1,0 +1,53 @@
+* {
+    font-family: Georgia;
+    color: white;
+    margin: 0;
+}
+
+header, footer {
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+
+.left, .center, .right {
+    background-color: lightsalmon;
+    height:  527px;
+}
+
+.left, .right {
+    width: 15%;
+}
+
+.center {
+    width: 70%;
+}
+
+.mini {
+    background-color: maroon;
+    height: 70px;
+}
+
+button {
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+
+.mini img {
+    height: 70px;
+}
+
+.center img {
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+
+.center img:hover {
+    transform: scale(1.2);
+}

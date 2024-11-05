@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasz zespół</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    
+    <header>
+        <div class="left"><img src="logo.png" alt="logo firmy"></div>
+        <div class="right"><h1>Nasz zespół</h1></div>
+    </header>
+
+    <main>
+        <section class="one" onclick="quo('a')">
+            <img src="osoba1.jpg" alt="Dyrektor">
+            <h2>Krzysztof Dobromilski</h2>
+            <h3>Dyrektor</h3>
+            <p>Firma logistyczna była jego marzeniem. Zrealizował je 10 lat temu. Nasza firma prosperuje dzięki Krzysztofowi</p>
+            <p>telefon: 111222333</p>
+            <h5><a href="mailto:Krzysztof.Dobromilski@firma.pl">Kontakt</a></h5>
+        </section>
+
+        <section class="two" onclick="quo('b')">
+            <img src="osoba2.jpg" alt="Kierownik logistyków">
+            <h2>Joanna Trojanowska</h2>
+            <h3>Kierownik logistyków</h3>
+            <p>Od początku firmy z nami. Wie jak zorganizować pracę swoich logistyków aby wszystko było na czas</p>
+            <p>telefon: 222333444</p>
+            <h5><a href="mailto:Joanna.Trojanowska@firma.pl">Kontakt</a></h5>
+        </section>
+
+        <section class="three" onclick="quo('c')">
+            <img src="osoba3.jpg" alt="Kadry">
+            <h2>Ewa Nowak</h2>
+            <h3>Księgowość i kadry</h3>
+            <p>Od lat finanse powierzamy niezawodnej Ewie. Twardą ręką trzyma kasę i dba o wszystkich pracowników</p>
+            <p>telefon: 333444555</p>
+            <h5><a href="mailto:Ewa.Nowak@firma.pl">Kontakt</a></h5>
+        </section>
+    </main>
+
+    <div class="cytat">
+        <section class="j" id="a">
+            <q>Każdego dnia stawiam sobie nieosiągalne wyzwania i próbuję je wykonać</q>
+                <p>- Krzysztof</p>
+        </section>
+        
+        <section class="d" id="b">
+            <q>Nie bój się porażek, im więcej ich rozwiążesz, tym szybciej osiągniesz cel</q>
+                <p>- Joanna</p>
+        </section>
+
+        <section class="t" id="c">
+            <q>Niezadowolony pracownik jest dla mnie źródłem nauki</q>
+                <p>- Ewa</p>
+        </section>
+        
+            
+    </div>
+
+    <footer><p>Stronę wykonał: Wojciech Sołdecki</p></footer>
+</body>
+</html>
+
+<script>
+    let array = ['a', 'b', 'c']
+
+    function quo(jaki)
+    {
+        array.forEach(element => {
+            document.getElementById(element).style.visibility = 'hidden';
+            document.getElementById(element).style.height = 0;
+        });
+
+        document.getElementById(jaki).style.visibility = 'visible';
+        document.getElementById(jaki).style.height = '52px';
+    }
+</script>
