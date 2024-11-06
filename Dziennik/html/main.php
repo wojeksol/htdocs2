@@ -1,5 +1,9 @@
 <?php 
     include('../php/session.php');
+
+    
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pl-PL">
@@ -37,7 +41,34 @@
 
     <main>
         <section>
-            <h1>Witaj w swoim dzienniku <?php echo $login_session; ?></h1>
+            <h1>
+                <?php  
+                $conn = new mysqli('localhost', 'root', '', 'dziennik');
+
+                $kw1 = "SELECT u.imie, u.nazwisko from uczen  u Join admin a on u.id=a.id_uczen where a.login = '$login_session'";
+
+                $kw2 = "SELECT n.imie, n.nazwisko from nauczyciel n Join admin a on n.id=a.id_nauczyciel where a.login = '$login_session'";
+            
+                $result1 =  mysqli_query($conn, $kw1);
+
+                $result2 =  mysqli_query($conn, $kw2);
+            
+                if(mysqli_num_rows($result1) > 0){
+                    while($row =mysqli_fetch_assoc($result1)){
+                        echo "<h1>Witaj w swoim dzienniku " . $row['imie'] . " " . $row['nazwisko'] . "</h1>";
+                    }
+                }
+                else{
+                    while($row =mysqli_fetch_assoc($result2)){
+                        echo "<h1>Witaj w swoim dzienniku " . $row['imie'] . " " . $row['nazwisko'] . "Nauczyciel" . "</h1>";
+                    }
+                }
+
+                mysqli_close($conn);
+
+                
+                ?>
+                </h1>
             <p>Witaj w swoim dzienniku. Tutaj znajdziesz wszystkie informacje dotyczące Twojej edukacji. Możesz sprawdzić swoje oceny, frekwencję, uwagi, plan lekcji oraz dane nauczycieli. W razie jakichkolwiek problemów, skontaktuj się z administratorem.</p>
         </section>
     </main>
