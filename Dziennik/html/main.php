@@ -1,9 +1,5 @@
 <?php 
     include('../php/session.php');
-
-    
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pl-PL">
@@ -28,10 +24,11 @@
         </nav>
 
         
+        
 
         <nav class="h-right">
             <a href="main.php"><img src="../img/home.jpg" alt=""></a>
-            <a href="oceny.html"><img src="../img/oceny.jpg" alt=""></a>
+            <a href="oceny.php"><img src="../img/oceny.jpg" alt=""></a>
             <a href="frekwencja.html"><img src="../img/frek.jpg" alt=""></a>
             <a href="uwagi.html"><img src="../img/uwagi.jpg" alt=""></a>
             <a href="wiadomosci.html"><img src="../img/wiad.jpg" alt=""></a>
@@ -55,12 +52,12 @@
             
                 if(mysqli_num_rows($result1) > 0){
                     while($row =mysqli_fetch_assoc($result1)){
-                        echo "<h1>Witaj w swoim dzienniku " . $row['imie'] . " " . $row['nazwisko'] . "</h1>";
+                        echo "<h1>Witaj w swoim dzienniku " . $row['imie'] . " " . $row['nazwisko'] . " Uczeń" ."</h1>";
                     }
                 }
                 else{
                     while($row =mysqli_fetch_assoc($result2)){
-                        echo "<h1>Witaj w swoim dzienniku " . $row['imie'] . " " . $row['nazwisko'] . "Nauczyciel" . "</h1>";
+                        echo "<h1>Witaj w swoim dzienniku " . $row['imie'] . " " . $row['nazwisko'] . " Nauczyciel" . "</h1>";
                     }
                 }
 

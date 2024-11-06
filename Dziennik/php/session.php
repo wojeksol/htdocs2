@@ -6,4 +6,3 @@
         die();
     }
     $login_session = $_SESSION['login'];
-?>

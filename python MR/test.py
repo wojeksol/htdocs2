@@ -3,7 +3,7 @@ with open("insert_statements.sql", "w") as file:
 
     # Pętla generująca zestaw od u001 do u100
     for i in range(1, 501):
-        id_str = f"2{i:03}"
+        id_str = f"u{i:02}"
         row = f"('{id_str}', '{id_str}', {i}, NULL)"
         
         # Dodajemy przecinek po każdym wpisie oprócz ostatniego
@@ -13,3 +13,5 @@ with open("insert_statements.sql", "w") as file:
             file.write(row + ";\n")
 
 print("Plik SQL został wygenerowany jako 'insert_statements.sql'")
+
+
