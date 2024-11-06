@@ -47,7 +47,7 @@
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            $kw1 = "SELECT o.ocena, p.nazwa as pnazwa, ko.nazwa as konazwa, n.imie, n.nazwisko, o.id_uczen, u.imie, u.nazwisko, a.login 
+            $kw1 = "SELECT o.ocena, p.nazwa as pnazwa, ko.nazwa as konazwa, n.imie as ni, n.nazwisko as nn, o.id_uczen, u.imie, u.nazwisko, a.login 
                 FROM nauczyciel n 
                 JOIN ocena o ON n.id=o.id_nauczyciel 
                 JOIN przedmiot p ON o.id_przedmiot=p.id 
@@ -61,16 +61,16 @@
             if (mysqli_num_rows($result) > 0) {
                 $grades = [];
                 while ($row = mysqli_fetch_assoc($result)) {
-                    $grades[$row['pnazwa']][] = ['ocena' => $row['ocena'], 'konazwa' => $row['konazwa'], 'nimie' => $row['imie'], 'nnazwisko' => $row['nazwisko']];
+                    $grades[$row['pnazwa']][] = ['ocena' => $row['ocena'], 'konazwa' => $row['konazwa'], 'nimie' => $row['ni'], 'nnazwisko' => $row['nn']];
                 
                 }
 
                 echo "<table><thead><tr><td>Przedmiot</td><td>Oceny</td></tr></thead><tbody>";
-                
+
                 foreach ($grades as $subject => $subject_grades) {
                     echo "<tr><td>" . $subject . "</td><td>";
                         foreach ($subject_grades as $grade) {
-                echo "<span><a title='Kategoria: " . $grade['konazwa'] . "\n" . "Nauczyciel: " . $grade['nimie'] . " " . $grade['nnazwisko'] . "'>" . $grade['ocena'] . "</a></span>";
+                echo "<span><a title='Kategoria: " . $grade['konazwa'] . "\n" . "Nauczyciel: " . $grade['nimie'] . " " . $grade['nnazwisko'] . "'>" . $grade['ocena'] . " </a></span>";
                     }
                     echo "</td></tr>";
                 }
