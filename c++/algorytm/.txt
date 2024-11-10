@@ -1,0 +1,1 @@
+%SystemRoot%\System32\cmd.exe /k C:\MinGW\set_distro_paths.bat

@@ -73,7 +73,7 @@ include("../php/session.php");
             foreach ($grades as $subject => $subject_grades) {
                 echo "<tr><td>" . $subject . "</td><td>";
                 foreach ($subject_grades as $grade) {
-                    echo "<span><a title='Kategoria: " . $grade['konazwa'] . "\n" . "Nauczyciel: " . $grade['nimie'] . " " . $grade['nnazwisko'] . "'>" . $grade['ocena'] . " </a></span>";
+                    echo "<span class='gr'><a title='Kategoria: " . $grade['konazwa'] . "\n" . "Nauczyciel: " . $grade['nimie'] . " " . $grade['nnazwisko'] . "'>" . $grade['ocena'] . " </a></span>";
                 }
                 echo "</td></tr>";
             }

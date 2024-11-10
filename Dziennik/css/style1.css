@@ -49,3 +49,7 @@ header {
 main {
     clear: both;
 }
+
+.gr:hover {
+    cursor: pointer;
+}
