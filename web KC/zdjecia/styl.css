@@ -26,6 +26,17 @@ header, footer {
 .mini {
     background-color: maroon;
     height: 70px;
+    clear: both;
+}
+
+.mini img {
+    animation-duration: 4s;
+    animation-name: a1;
+}
+
+@keyframes a1 {
+    from {padding-left: 50px;}
+    to {padding-left: 0px;}
 }
 
 button {
@@ -46,8 +57,29 @@ button {
     display: block;
     margin: auto;
     padding-top: 45px;
+    width: 640px;
+    height: 427px;
 }
 
 .center img:hover {
-    transform: scale(1.2);
+    animation-duration: 5s;
+    animation-name: a2;
+    scale: 120%;
+}
+
+@keyframes a2{
+    from {scale: 100%;}
+    to {scale: 120%;}
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    float: left;
+}
+
+.right {
+    float: right;
 }

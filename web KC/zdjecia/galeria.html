@@ -14,7 +14,7 @@
 
     <main>
         <nav class="left"><button onclick="left()"><</button></nav>
-        <nav class="center"><img src="1.jpg" alt="Aktywne zdjęcie"></nav>
+        <nav class="center"><img src="1.jpg" alt="Aktywne zdjęcie" id="img"></nav>
         <nav class="right"><button onclick="right()">></button></nav>
     </main>
 
@@ -28,11 +28,49 @@
         <img src="7.jpg" alt="Wrocław">
     </nav>
 
-    <footer>
-        <h3>Autorem galerii jest:</h3>
-        <p>Wojciech Sołdecki</p>
+    <footer><br>
+        <h3>Autorem galerii jest:</h3><br>
+        <p>Wojciech Sołdecki</p><br>
         <a href="http://pixabay.com" target="_blank">Więcej zdjęć</a>
     </footer>
     
 </body>
 </html>
+
+<script>
+    let Fotos = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"];
+
+    function right() {      
+        let Foto = document.getElementById("img").src;
+        let FotosLength = Fotos.length - 1;
+        for (let i = 0; i < Fotos.length; i++){
+            if (Foto.includes(Fotos[i])){
+                if (i == FotosLength){
+                    document.getElementById("img").src = Fotos[0];
+                    break;
+                } else {
+                    document.getElementById("img").src = Fotos[i+1];
+                    break;
+                }
+            }      
+        }  
+    };
+
+    function left() {
+        let Foto = document.getElementById("img").src;
+        let FotosLength = Fotos.length - 1;
+        for (let i = 0; i < Fotos.length; i++){
+            if (Foto.includes(Fotos[i])){
+                if (i == 0){
+                    document.getElementById("img").src = Fotos[FotosLength];
+                    break;
+                } else {
+                    document.getElementById("img").src = Fotos[i-1];
+                    break;
+                }
+            }      
+        }
+    };
+
+</script>
+
