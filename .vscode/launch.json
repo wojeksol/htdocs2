@@ -1,26 +1,42 @@
 {
-    // Użyj funkcji IntelliSense, aby uzyskać informacje o możliwych atrybutach.
-    // Najedź kursorem, aby wyświetlić opisy istniejących atrybutów.
-    // Aby uzyskać więcej informacji, odwiedź stronę: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
     {
-        "type": "ruby_lsp",
-        "request": "attach",
-        "name": "Attach to a debuggee"
+      "type": "ruby_lsp",
+      "request": "attach",
+      "name": "Attach to a debuggee"
     },
+    {
+      "type": "rdbg",
+      "name": "Debug current file with rdbg",
+      "request": "launch",
+      "script": "${file}",
+      "args": [],
+      "askParameters": true
+    },
+    {
+      "type": "rdbg",
+      "name": "Attach with rdbg",
+      "request": "attach"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/xampp/htdocs/c++/zadania",
+      "program": "c:/xampp/htdocs/c++/zadania/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
         {
-            "type": "rdbg",
-            "name": "Debug current file with rdbg",
-            "request": "launch",
-            "script": "${file}",
-            "args": [],
-            "askParameters": true
-        },
-        {
-            "type": "rdbg",
-            "name": "Attach with rdbg",
-            "request": "attach"
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ]
+    }
+  ]
 }
