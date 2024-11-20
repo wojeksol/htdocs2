@@ -29,9 +29,9 @@
         <nav class="h-right">
             <a href="main.php"><img src="../img/home.jpg" alt=""></a>
             <a href="oceny.php"><img src="../img/oceny.jpg" alt=""></a>
-            <a href="frekwencja.html"><img src="../img/frek.jpg" alt=""></a>
-            <a href="uwagi.html"><img src="../img/uwagi.jpg" alt=""></a>
-            <a href="wiadomosci.html"><img src="../img/wiad.jpg" alt=""></a>
+            <a href="frekwencja.php"><img src="../img/frek.jpg" alt=""></a>
+            <a href="uwagi.php"><img src="../img/uwagi.jpg" alt=""></a>
+            <a href="wiadomosci.php"><img src="../img/wiad.jpg" alt=""></a>
         </nav>
 
     </header>

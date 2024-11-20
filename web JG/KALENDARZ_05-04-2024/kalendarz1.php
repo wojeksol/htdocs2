@@ -33,7 +33,7 @@
                 $pyt1 = "UPDATE zadania SET wpis= '$var2' WHERE dataZadania='$var4';";
             
                 mysqli_query($sql, $pyt1);
-            }
+            };
 
             $pyt2 ="SELECT dataZadania, wpis, id FROM zadania WHERE miesiąc='sierpień';";
             $wynik = mysqli_query($sql, $pyt2);
