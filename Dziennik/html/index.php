@@ -23,7 +23,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logowanie</title>
     <link rel="stylesheet" href="../css/style2.css">
 </head>
 <body>
@@ -48,10 +48,6 @@
                 <p id="p"><?php echo $error; ?></p>
             </form>
         </div>
-      <script>
-        document.getElementById('p').style.color = 'red';
-             
-      </script>
         
     </main>
 

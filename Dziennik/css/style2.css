@@ -1,47 +1,74 @@
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
+    padding: 0;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
     height: 150px;
-    background-color: blueviolet;
 }
 
-.h-left img {
+nav.h-left {
+    float: left;
+}
+
+nav.h-left img {
     height: 150px;
 }
 
-.login input{
-    border-radius: 10px;
+nav.h-right {
+    float: right;
 }
-
 
 main {
     display: flex;
-    
     justify-content: center;
-}
-.login {
-    margin: 100px;
-    height: 400px;
-    width: 300px;
-    border-radius: 20px;
-    background-color: lightgrey;
     align-items: center;
-    display: flex;
-    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    height: 80vh;
+}
+
+.login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .login input[type="submit"] {
-    float: right;
-    color: blueviolet;
-    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-
-h3 {
-    text-align: center;
-    color: blueviolet;
+.login input[type="submit"]:hover {
+    background-color: #555;
 }
 
-
+#p {
+    color: red;
+    margin-top: 10px;
+}

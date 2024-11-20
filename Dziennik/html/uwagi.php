@@ -1,30 +1,30 @@
 <?php
 include("../php/session.php");
 
-function getAttendance($conn, $login_session) {
-    $sql = "SELECT f.Data, f.Godzina_lekcyjna, f.typ, u.imie, u.nazwisko 
-            FROM frekwencja f 
-            JOIN uczen u ON f.id_uczen = u.id 
+function getRemarks($conn, $login_session) {
+    $sql = "SELECT u.imie, u.nazwisko, uw.tresc, uw.data 
+            FROM uwagi uw 
+            JOIN uczen u ON uw.id_uczen = u.id 
             JOIN admin a ON u.id = a.id_uczen 
             WHERE a.login = '$login_session'";
     return $conn->query($sql);
 }
 
-function displayAttendance($result) {
+function displayRemarks($result) {
     if ($result->num_rows > 0) {
-        echo "<table><tr><th>Data</th><th>Godzina Lekcyjna</th><th>Typ</th><th>Imię</th><th>Nazwisko</th></tr>";
+        echo "<table><tr><th>Imię</th><th>Nazwisko</th><th>Treść</th><th>Data</th></tr>";
         while($row = $result->fetch_assoc()) {
-            echo "<tr><td>" . $row["Data"]. "</td><td>" . $row["Godzina_lekcyjna"]. "</td><td>" . $row["typ"]. "</td><td>" . $row["imie"] . "</td><td>" . $row["nazwisko"] . "</td></tr>";
+            echo "<tr><td>" . $row["imie"]. "</td><td>" . $row["nazwisko"]. "</td><td>" . $row["tresc"]. "</td><td>" . $row["data"]. "</td></tr>";
         }
         echo "</table>";
     } else {
-        echo "Brak frekwencji";
+        echo "Brak uwag";
     }
 }
 
-function displayAttendanceForm() {
-    echo '<h2>Dodaj nową frekwencję</h2>
-          <form method="post" action="dodaj_frekwencje.php">
+function displayRemarkForm() {
+    echo '<h2>Dodaj nową uwagę</h2>
+          <form method="post" action="dodaj_uwage.php">
               <label for="uczen">Uczeń:</label>
               <select id="uczen" name="uczen">';
     
@@ -40,28 +40,8 @@ function displayAttendanceForm() {
     $conn->close();
 
     echo '</select><br>
-          <label for="data">Data:</label><br>
-          <input type="date" id="data" name="data" required><br>
-          <label for="godzina">Godzina Lekcyjna:</label><br>
-          <select id="godzina" name="godzina" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-          </select><br>
-          <label for="typ">Typ:</label><br>
-          <select id="typ" name="typ" required>
-              <option value="nieobecnosc">Nieobecność</option>
-              <option value="spoznienie">Spóźnienie</option>
-              <option value="usprawiedliwione">Usprawiedliwione</option>
-              <option value="zwolnienie">Zwolnienie</option>
-          </select><br>
+          <label for="tresc">Treść:</label><br>
+          <textarea id="tresc" name="tresc" rows="4" cols="50" required></textarea><br>
           <input type="submit" value="Dodaj">
           </form>';
 }
@@ -84,8 +64,9 @@ function like($str, $searchTerm) {
         return true;
 }
 
+
 $conn = connectToDatabase();
-$result = getAttendance($conn, $login_session);
+$result = getRemarks($conn, $login_session);
 ?>
 
 <!DOCTYPE html>
@@ -94,7 +75,7 @@ $result = getAttendance($conn, $login_session);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="300; url='../php/logout.php'">
-    <title>Frekwencja</title>
+    <title>Uwagi</title>
     <link rel="stylesheet" href="../css/style4.css">
 </head>
 <body>
@@ -114,11 +95,9 @@ $result = getAttendance($conn, $login_session);
         </nav>
     </header>
     <main>
-        
-        <?php if(like($login_session, 'u')){
-            echo "<h1>Frekwencja</h1>";
-            displayAttendance($result);} ?>
-        <?php if(like($login_session, 'n')){displayAttendanceForm();} ?>
+        <h1>Uwagi</h1>
+        <?php displayRemarks($result); ?>
+        <?php if(like($login_session, 'n')){displayRemarkForm();} ?>
     </main>
 </body>
 </html>

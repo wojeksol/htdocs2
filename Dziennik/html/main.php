@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="300; url='../php/logout.php'">
     <title>Strona Główna</title>
-    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/style4.css">
 </head>
 <body>
 
@@ -67,11 +67,12 @@
                 ?>
                 </h1>
             <p>Witaj w swoim dzienniku. Tutaj znajdziesz wszystkie informacje dotyczące Twojej edukacji. Możesz sprawdzić swoje oceny, frekwencję, uwagi, plan lekcji oraz dane nauczycieli. W razie jakichkolwiek problemów, skontaktuj się z administratorem.</p>
+            <p>Wszelkie prawa zastrzeżone &copy; 2024</p>
         </section>
     </main>
 
     <footer>
-        <p>Wszelkie prawa zastrzeżone &copy; 2020</p>
+        
     </footer>
     
 </body>
