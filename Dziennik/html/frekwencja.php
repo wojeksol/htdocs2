@@ -18,7 +18,7 @@ function displayAttendance($result) {
         }
         echo "</table>";
     } else {
-        echo "Brak frekwencji";
+        echo "Brak nieobescości";
     }
 }
 
