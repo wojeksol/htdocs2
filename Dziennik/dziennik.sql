@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Lis 20, 2024 at 03:35 PM
+-- Generation Time: Lis 22, 2024 at 01:44 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.2.4
 
@@ -682,7 +682,9 @@ CREATE TABLE `frekwencja` (
 
 INSERT INTO `frekwencja` (`id`, `Data`, `id_nauczyciel`, `id_uczen`, `Godzina_lekcyjna`, `typ`) VALUES
 (1, '2024-11-14', NULL, 1, '1', 'nieobecnosc'),
-(2, '2024-11-14', NULL, 1, '2', 'nieobecnosc');
+(2, '2024-11-14', NULL, 1, '2', 'nieobecnosc'),
+(3, '2024-11-14', 1, 1, '3', 'nieobecnosc'),
+(4, '2024-11-14', NULL, 1, '4', 'nieobecnosc');
 
 -- --------------------------------------------------------
 
@@ -11466,6 +11468,41 @@ INSERT INTO `uczen` (`id`, `imie`, `nazwisko`, `id_klasa`) VALUES
 (526, 'Jolanta', 'Szydełko', 16),
 (527, 'Jakub', 'Juszkiewicz', 16);
 
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `uwagi`
+--
+
+CREATE TABLE `uwagi` (
+  `id` int(11) NOT NULL,
+  `tresc` text NOT NULL,
+  `data` date NOT NULL,
+  `id_uczen` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `uwagi`
+--
+
+INSERT INTO `uwagi` (`id`, `tresc`, `data`, `id_uczen`) VALUES
+(1, 'xd', '2024-11-20', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `wiadomosci`
+--
+
+CREATE TABLE `wiadomosci` (
+  `id` int(11) NOT NULL,
+  `tytul` text NOT NULL,
+  `tresc` text NOT NULL,
+  `data` date NOT NULL,
+  `id_nauczyciel` int(11) NOT NULL,
+  `id_uczen` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Indeksy dla zrzutów tabel
 --
@@ -11528,6 +11565,21 @@ ALTER TABLE `uczen`
   ADD KEY `id_klasa` (`id_klasa`);
 
 --
+-- Indeksy dla tabeli `uwagi`
+--
+ALTER TABLE `uwagi`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_uwa_ucz` (`id_uczen`);
+
+--
+-- Indeksy dla tabeli `wiadomosci`
+--
+ALTER TABLE `wiadomosci`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_wiad_nau` (`id_nauczyciel`),
+  ADD KEY `fk_wiad_uczen` (`id_uczen`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -11535,7 +11587,7 @@ ALTER TABLE `uczen`
 -- AUTO_INCREMENT for table `frekwencja`
 --
 ALTER TABLE `frekwencja`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `kategorie_ocen`
@@ -11574,6 +11626,18 @@ ALTER TABLE `uczen`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=528;
 
 --
+-- AUTO_INCREMENT for table `uwagi`
+--
+ALTER TABLE `uwagi`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `wiadomosci`
+--
+ALTER TABLE `wiadomosci`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- Constraints for dumped tables
 --
 
@@ -11606,6 +11670,19 @@ ALTER TABLE `ocena`
 --
 ALTER TABLE `uczen`
   ADD CONSTRAINT `uczen_ibfk_1` FOREIGN KEY (`id_klasa`) REFERENCES `klasa` (`id`);
+
+--
+-- Constraints for table `uwagi`
+--
+ALTER TABLE `uwagi`
+  ADD CONSTRAINT `fk_uwa_ucz` FOREIGN KEY (`id_uczen`) REFERENCES `uczen` (`id`);
+
+--
+-- Constraints for table `wiadomosci`
+--
+ALTER TABLE `wiadomosci`
+  ADD CONSTRAINT `fk_wiad_nau` FOREIGN KEY (`id_nauczyciel`) REFERENCES `nauczyciel` (`id`),
+  ADD CONSTRAINT `fk_wiad_uczen` FOREIGN KEY (`id_uczen`) REFERENCES `uczen` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

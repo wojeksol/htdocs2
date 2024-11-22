@@ -74,7 +74,14 @@ function displayGradeForm() {
 
     echo '</select><br>
           <label for="ocena">Ocena:</label><br>
-          <input type="number" id="ocena" name="ocena" min="1" max="6" required><br>
+          <select name="ocena" id="ocena" >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          </select><br>
           <input type="submit" value="Dodaj">
           </form>';
 }
@@ -129,7 +136,7 @@ $result = getGrades($conn, $login_session);
     </header>
     <main>
         <h1>Oceny</h1>
-        <?php displayGrades($result); ?>
+        <?php if(like($login_session, 'u')){displayGrades($result);} ?>
         <?php if(like($login_session, 'n')){displayGradeForm();} ?>
     </main>
 </body>

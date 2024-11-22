@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: red;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 30px;
+}
+

@@ -17,55 +17,20 @@
       <form>
         <nav class="m-1" id="m-1">
           <h2>Dane osobowe</h2>
-          <input
-            type="text"
-            name=""
-            id="name"
-            placeholder="Wpisz imie..."
-            required
-          /><br />
-          <input
-            type="text"
-            name=""
-            id="sname"
-            placeholder="Wpisz nazwisko..."
-            required
-          /><br />
+          <input type="text" name="" id="name" placeholder="Wpisz imie..." required /><br />
+          <input type="text" name="" id="sname" placeholder="Wpisz nazwisko..." required /><br />
           <button type="button" onclick="s1()">Następna karta</button>
         </nav>
         <nav class="m-2" id="m-2">
           <h2>Dane kontaktowe</h2>
-          <input
-            type="email"
-            name=""
-            id="email"
-            placeholder="Wpisz email..."
-            required
-          /><br />
-          <input
-            type="tel"
-            name=""
-            id="tel"
-            placeholder="Twój numer telefonu..."
-          /><br />
+          <input type="email"name="" id="email" placeholder="Wpisz email..." required /><br />
+          <input type="tel" name="" id="tel" placeholder="Twój numer telefonu..." /><br />
           <button type="button" onclick="s2()">Następna karta</button>
         </nav>
         <nav class="m-3" id="m-3">
           <h2>Hasło do logowania</h2>
-          <input
-            type="password"
-            name=""
-            id="pass1"
-            placeholder="Podaj hasło"
-            required
-          /><br />
-          <input
-            type="password"
-            name=""
-            id="pass2"
-            placeholder="Powtórz hasło"
-            required
-          /><br />
+          <input type="password" name="" id="pass1" placeholder="Podaj hasło" required /><br />
+          <input type="password" name="" id="pass2" placeholder="Powtórz hasło" required /><br />
           <button type="button" onclick="s3() ">Zatwierdź</button>
         </nav>
       </form>
@@ -122,6 +87,6 @@
     var name = document.getElementById("name").value;
     var sname = document.getElementById("sname").value;
 
-    console.log(name + " " + sname);
+    console.log(name + '\xa0' + sname);
   }
 </script>
