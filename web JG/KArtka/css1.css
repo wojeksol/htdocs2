@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(tlo1.gif);
+    background-size: cover;
+    flex-direction: column;
+}
+
+body > div.Card {
+    display: flex;
+    background: rgb(179, 206, 236);
+    height: 60vh;
+    width: 40vh;
+    flex-wrap: wrap;
+    border: 10px solid #300000;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 50px;
+}
+
+.Card__body {
+    font-size: 150%;
+    height: 10vh;
+    width: 36vh;
+    text-align: center;
+}
+
+div img {
+    height: 36vh;
+    width: 30vh;
+}
+
+section {
+    height: 0;
+}
+
+section img {
+    height: 15vh;
+    animation: Santa 2s linear infinite;
+    position: relative;
+    top: -40vh;
+    left: auto;
+    
+}
+
+@keyframes Santa {
+    0% { 
+        transform: rotate(360deg)  
+            translateX(45vh) rotate(-360deg); 
+    } 
+
+    100% { 
+        transform: rotate(0deg)  
+            translateX(45vh) rotate(0deg); 
+    } 
+}
+
+.Card__logo { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4vh;
+    width: 30vh;
+}
+
+.Card__logo img{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+}
+
