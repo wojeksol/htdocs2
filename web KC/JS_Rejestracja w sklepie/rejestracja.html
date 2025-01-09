@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    
+    <div class="left">
+        <img src="obraz.png" alt="promocje">
+        <h2>Sprawdź promocje</h2>
+        <table>
+            <tr>
+                <th>co?</th>
+                <th>ile taniej?</th>
+            </tr>
+            <tr>
+                <td>ubrania</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>buty</td>
+                <td>25%</td>
+            </tr>
+        </table>
+    </div>
+    <header><h1>Zarejestruj się w sklepie</h1></header>
+    <main>
+        
+            <button onclick="Active('klient')">Klient</button>
+            <button onclick="Active('adres')">Adres</button>
+            <button onclick="Active('kontakt')">Kontakt</button>
+
+            <div class="control1" id="klient">
+                <p>Imię</p><br>
+                <input type="text" name="" id="inputk1" placeholder="Wpisz dane..." onblur="Progres()"><br><br>
+                <p>Nazwisko</p><br>
+                <input type="text" name="" id="inputk2" onblur="Progres()">
+                <br><br><p>Data urodzenia</p><br>
+                <input type="date" name="" id="inputk3" onblur="Progres()">
+            </div>
+            <div class="control2" id="adres">
+                <p>Ulica</p><br>
+                <input type="text" name="" id="inputa1" onblur="Progres()">
+                <br><br><p>Numer</p><br>
+                <input type="number" name="" id="inputa2" onblur="Progres()">
+                <br><br><p>Miasto</p><br>
+                <input type="text" name="" id="inputa3" onblur="Progres()">
+            </div>
+            <div class="control3" id="kontakt">
+                <p>Numer komórkowy</p><br>
+                <input type="tel" name="" id="inputko1" onblur="Progres()"><br>
+                <input type="checkbox" name="" id="inputko2" onblur="Progres()">Akceputje RODO <br><br>
+                <button onclick="Console()">Zatwierdź dane</button>
+            </div>
+            
+        
+        
+    </main>
+
+    <div class="Loading">
+        <div class="EmptyLoading" id="EmptyLoading"></div>
+    </div>
+
+    <footer><h4>Rejestracje do sklepu wykonał: WOjciech Sołecki</h4></footer>
+    
+</body>
+</html>
+
+<script>
+    let array = ['klient', 'adres', 'kontakt'];
+    function Active(x) {
+        array.forEach(element => {
+            document.getElementById(element).style.display = 'none';
+        });
+        document.getElementById(x).style.display = 'block';
+    }
+
+    function Progres() {
+        let count = 0;
+        
+                let inputs = document.getElementsByTagName('input');
+                
+                for(let i = 0; i < inputs.length; i++) {
+                    if(inputs[i].value != '') {
+                        count++;
+                    }
+                }
+                let progres = (count / 8) * 100;
+                document.getElementById('EmptyLoading').style.width = progres + '%';
+    
+            }
+        ;
+
+        function Console(){
+            let name = document.getElementById('inputk1').value;
+            let sname = document.getElementById('inputk2').value;
+            let date = document.getElementById('inputk3').value;
+            let street = document.getElementById('inputa1').value;
+            let number = document.getElementById('inputa2').value;
+            let city = document.getElementById('inputa3').value;
+            let phone = document.getElementById('inputko1').value;
+            let rodo = document.getElementById('inputko2').checked;
+            console.log(name + '\n' + sname + '\n' + date + '\n' + street + '\xa0' + number + '\n' + city + '\n' + phone + '\n' + rodo);
+        }
+        
+
+</script>
