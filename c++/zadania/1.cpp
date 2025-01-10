@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
     std::cout << "Program oblicza BMI na podstawie podanych danych\n";
@@ -10,7 +11,11 @@ int main() {
 
     wzrost = wzrost / 100;
 
-    bmi = masa / sqrt(wzrost);
+    wzrost = wzrost * wzrost;
+
+    
+
+    bmi = masa / wzrost;
 
     if (bmi < 18.5) {
         std::cout << "Jestes za chudy";
