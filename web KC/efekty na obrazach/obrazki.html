@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+
+    <main>
+        <section class="main-one">
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="img-one"><br>
+            <input type="checkbox" name="checkbox" id="blur">Blur <br>
+            <input type="checkbox" name="checkbox" id="sepia">Sepia <br>
+            <input type="checkbox" name="checkbox" id="negation">Negatyw <br>
+            <button onclick="TransformImageOne()">Zastosuj</button>
+        </section>
+
+        <section class="main-two">
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="img-two"><br>
+            <button onclick="TransformImageTwo('color')" id="color">Kolorowy</button>
+            <button onclick="TransformImageTwo('gray')" id="gray">Czarno-biały</button>
+        </section>
+
+        <section class="main-three">
+            <img src="owoce.jpg" alt="Kosz pełen owoców" id="img-three"><br>
+            <input type="range" min="0" max="100" value="100" name="" id="range-one"><br>
+            <button onclick="TransformImageThree()">Zastosuj</button>
+        </section>
+
+        <section class="main-four">
+            <img src="zolw.jpg" alt="Żółw w wodzie" id="img-four"><br>
+            <input type="range" min="0" max="250" name="" id="range-two"><br>
+            <button onclick="TransformImageFour()">Zastosuj</button>
+        </section>
+    </main>
+
+    <footer>
+        <p id="p"><a href="http://www.css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: Wojciech Sołdecki</p>
+    </footer>
+
+</body>
+
+</html>
+<script>
+    function TransformImageOne() {
+        document.getElementById('blur').checked == true ? document.getElementById('img-one').style.filter = 'blur(5px)' : (document.getElementById('sepia').checked == true ? document.getElementById('img-one').style.filter = 'sepia(100%)' : (document.getElementById('negation').checked == true ? document.getElementById('img-one').style.filter = 'invert(100%)' : document.getElementById('img-one').style.filter = 'none'));
+    }
+
+    function TransformImageTwo(a) {
+        document.getElementById('img-two').style.filter = a == 'gray' ? 'grayscale(100%)' : 'grayscale(0%)';
+    }
+
+    function TransformImageThree() {
+        let range = document.getElementById('range-one').value;
+        document.getElementById('img-three').style.filter = 'opacity(' + range + '%)';
+    }
+
+    function TransformImageFour() {
+        let range = document.getElementById('range-two').value;
+        document.getElementById('img-four').style.filter = 'brightness(' + range + '%)'
+    }
+</script>
