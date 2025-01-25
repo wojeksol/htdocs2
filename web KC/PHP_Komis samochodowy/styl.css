@@ -58,5 +58,8 @@ a {
 
 .main-three {
     float: left;
+    clear: both;
+    text-align: center;
+    width: 100%;
 }
 
