@@ -9,7 +9,7 @@ $conn = new mysqli('localhost', 'root', '', 'kupauto');
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Komis aut</title>
     <link rel="stylesheet" href="styl.css">
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    
 </head>
 
 <body>
