@@ -47,7 +47,7 @@
     </main>
 
     <footer>
-        <p>Autor strony: Wojciech Sołdecki</p>
+        <p>Autor strony: WS</p>
     </footer>
     
 </body>

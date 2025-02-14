@@ -67,7 +67,7 @@
         
         ?>
 
-        <p>Stronę wykonał: Wojciech Sołdecki</p>
+        <p>Stronę wykonał: WS</p>
     </footer>
 
 

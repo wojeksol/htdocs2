@@ -64,6 +64,6 @@
             ?>
         </nav>
     </main>
-    <footer>Portal ogłoszniowy zaprojektował: Wojciech Sołdecki</footer>
+    <footer>Portal ogłoszniowy zaprojektował: WS</footer>
 </body>
 </html>

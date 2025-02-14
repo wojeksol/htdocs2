@@ -83,7 +83,7 @@
 
     
     
-    <footer>Autor: Wojciech Sołdecki</footer>
+    <footer>Autor: WS</footer>
 
 </body>
 </html>

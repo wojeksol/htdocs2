@@ -67,7 +67,7 @@
     
         </form>
 
-        <footer><p>Wykonał: Wojciech Sołdecki</p></footer>
+        <footer><p>Wykonał: WS</p></footer>
     </main>
 
 

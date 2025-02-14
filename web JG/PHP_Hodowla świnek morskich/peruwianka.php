@@ -80,7 +80,7 @@
 
         
         
-        <p>Strone wykonał: Wojciech Sołdecki</p><br>
+        <p>Strone wykonał: WS</p><br>
 
     </footer>
     

@@ -162,7 +162,7 @@ $conn = new mysqli('localhost', 'root', '', 'kupauto');
 
     <footer>
         <section class="f-one">
-            <p>Stronę wykonał Wojciech Sołdekci</p>
+            <p>Stronę wykonał WS</p>
         </section>
         <section class="f-two"><a href="http://firmy.pl/komis">Znajdź nas także</a></section>
     </footer>
