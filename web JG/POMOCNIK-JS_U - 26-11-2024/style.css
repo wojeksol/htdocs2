@@ -17,3 +17,41 @@ header div, header nav {
     padding: 20px;
     text-align: center;
 }
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font: bold;
+}
+
+table {
+    margin: 40px;
+}
+
+td {
+    padding: 30px;
+    text-align: center;
+    font: bold;
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: solid 1px white;
+}
