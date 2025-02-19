@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    cos
+<!--    Navbar here-->
 </body>
 </html>
