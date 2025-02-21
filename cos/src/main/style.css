@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: Tahoma;
+    font-family: Tahoma, sans-serif;
 }
 
 header {
@@ -24,6 +24,10 @@ main {
     background-color: #26a69a;
     height: 550px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer {
@@ -44,6 +48,10 @@ footer {
     width: 100%;
     height: 30px;
     border: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .Card button:hover {
